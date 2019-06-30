@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#define word 10
+#define MAX 1024
+
+
+char buf[MAX];
+char trans[MAX];
+int bufsize;
+char *ptr;
+
+char dic[word][2][10] = { { "i", "나" }
+, { "love", "사랑" }
+, { "you", "너" }
+, { "boy", "소년" }
+, { "am", "이다" }
+, { "girl", "소녀" }
+, { "school", "학교" }
+, { "he", "그는" }
+, { "go", "간다" } 
+ };
+
+//단어
+
+
+rewind(fp);
