@@ -1,8 +1,7 @@
 #ifndef __DOUBLELINKEDLIST_H__
 #define __DOUBLELINKEDLIST_H__
-
-
 template <typename DATA>
+
 struct Node
 {
 	DATA * Data;
@@ -45,7 +44,7 @@ int doublelinkedlist<DATA>::Head(DATA *Data){
 
 	Node<DATA> *pNode = new Node<DATA>;
 
-	pNode->Data = Data; //µ¥ÀÌÅÍ »ðÀÔ
+	pNode->Data = Data; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 	pNode->pNext = head.pNext;
 	pNode->pPrev = &head;
@@ -55,7 +54,7 @@ int doublelinkedlist<DATA>::Head(DATA *Data){
 	return 0;
 
 }
-//²¿¸®¿¡ »ðÀÔÇÏ´Â ºÎºÐ
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Îºï¿½
 template <typename DATA>
 int doublelinkedlist<DATA>::Tail(DATA *Data){
 
@@ -71,7 +70,7 @@ int doublelinkedlist<DATA>::Tail(DATA *Data){
 	return 0;
 }
 
-//°Ë»ö ÇÏ´Â ºÎºÐ
+//ï¿½Ë»ï¿½ ï¿½Ï´ï¿½ ï¿½Îºï¿½
 template <typename DATA>
 int doublelinkedlist<DATA>::Sear(DATA *Data){
 
@@ -81,7 +80,7 @@ int doublelinkedlist<DATA>::Sear(DATA *Data){
 
 		if (*(DATA*)pNode->Data == *(DATA*)Data){
 
-			cout << "[" << *(DATA*)Data << "]" << " °¡ °Ë»ö " << endl;
+			cout << "[" << *(DATA*)Data << "]" << " ï¿½ï¿½ ï¿½Ë»ï¿½ " << endl;
 
 			return 0;
 		}
@@ -93,7 +92,7 @@ int doublelinkedlist<DATA>::Sear(DATA *Data){
 }
 
 
-//»èÁ¦ ÇÏ´Â ºÎºÐ
+//ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Îºï¿½
 template <typename DATA>
 int doublelinkedlist<DATA>::Del(DATA *Data){
 
@@ -117,7 +116,7 @@ int doublelinkedlist<DATA>::Del(DATA *Data){
 
 
 
-//¸ðµÎ »èÁ¦ ÇÏ´Â ºÎºÐ
+//ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Îºï¿½
 template <typename DATA>
 void doublelinkedlist<DATA>::AllDel(void){
 
@@ -131,7 +130,7 @@ void doublelinkedlist<DATA>::AllDel(void){
 		delete DeleteNode;
 	}
 
-	cout << "¸ðµÎ »èÁ¦ µÇ¾ú½À´Ï´Ù" << endl;
+	cout << "ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½" << endl;
 
 	head.pNext = &tail;
 	tail.pPrev = &head;
@@ -139,7 +138,7 @@ void doublelinkedlist<DATA>::AllDel(void){
 }
 
 
-// Ãâ·ÂÇÏ´Â ºÎºÐ
+// ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Îºï¿½
 template <typename DATA>
 void doublelinkedlist<DATA>::Print(void){
 
