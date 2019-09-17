@@ -1,5 +1,3 @@
-// cLinkedlist.cpp : ÄÜ¼Ö ÀÀ¿ë ÇÁ·Î±×·¥¿¡ ´ëÇÑ ÁøÀÔÁ¡À» Á¤ÀÇÇÕ´Ï´Ù.
-//
 
 #include "stdafx.h"
 #include "CLinkedlist.h"
@@ -21,39 +19,39 @@ int _tmain(int argc, _TCHAR* argv[])
 	memset(pData, 0, sizeof(st_DATA));
 	pData->iPosX = 1;
 	pData->iPosY = 1;
-	strcpy_s(pData->szName, "ÀÏ¹ø");
+	strcpy_s(pData->szName, "ï¿½Ï¹ï¿½");
 	ListData.InsertHead(pData);
 
 	pData = new st_DATA;
 	memset(pData, 0, sizeof(st_DATA));
 	pData->iPosX = 2;
 	pData->iPosY = 2;
-	strcpy_s(pData->szName, "ÀÌ¹ø");
+	strcpy_s(pData->szName, "ï¿½Ì¹ï¿½");
 	ListData.InsertHead(pData);
 
 	pData = new st_DATA;
 	memset(pData, 0, sizeof(st_DATA));
 	pData->iPosX = 3;
 	pData->iPosY = 3;
-	strcpy_s(pData->szName, "»ï¹ø");
+	strcpy_s(pData->szName, "ï¿½ï¿½ï¿½");
 	ListData.InsertHead(pData);
 
 	pData = new st_DATA;
 	memset(pData, 0, sizeof(st_DATA));
 	pData->iPosX = 4;
 	pData->iPosY = 4;
-	strcpy_s(pData->szName, "»ç¹ø");
+	strcpy_s(pData->szName, "ï¿½ï¿½ï¿½");
 	ListData.InsertHead(pData);
 
 	pData = new st_DATA;
 	memset(pData, 0, sizeof(st_DATA));
 	pData->iPosX = 5;
 	pData->iPosY = 5;
-	strcpy_s(pData->szName, "¿À¹ø");
+	strcpy_s(pData->szName, "ï¿½ï¿½ï¿½ï¿½");
 	ListData.InsertHead(pData);
 
 
-//Ãâ·Â
+//ï¿½ï¿½ï¿½
 	ListData.MoveHead();
 
 	while (ListData.MoveNext())
@@ -62,7 +60,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		printf("Linkedlist : ( X : %d, Y : %d) %s \n", pData->iPosX, pData->iPosY, pData->szName);
 	}
 
-//°Ë»ö
+//ï¿½Ë»ï¿½
 
 	ListData.MoveHead();
 
@@ -74,7 +72,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			printf("\nSerach Linkedlist : ( X : %d, Y : %d) %s \n\n", pData->iPosX, pData->iPosY, pData->szName);
 		}
 	}
-//»èÁ¦
+//ï¿½ï¿½ï¿½ï¿½
 	ListData.MoveHead();
 	while (ListData.MoveNext())
 	{
